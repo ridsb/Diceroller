@@ -1,0 +1,63 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 23%, rgba(0,0,0,1) 52%, rgba(51,48,48,1) 82%);
+
+
+}
+button{
+    font-style:"Sans Serif";
+    font-size: large;
+    font-weight: bold;
+    color:#0f1635;
+    
+    background-color: rgb(71, 73, 94);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    box-shadow: 2px 2px #401212;
+}
+h1 {
+    margin:20px;
+    text-align: center;
+    font-family: 'Sans Serif', cursive;
+    text-shadow: 5px 0 #8f1e3c;
+    font-size: 3em;
+    color: #2841bf;
+  }
+.container{
+    width:450px;
+    padding:40px;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 7%, rgba(0,0,0,1) 49%, rgba(16,37,66,1) 85%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius: 20px;
+    box-shadow: inset;
+}
+img{
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 30px;
+}
+.shake{
+    animation: shake 0.4s infinite;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+}
